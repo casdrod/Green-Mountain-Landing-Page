@@ -3,5 +3,5 @@
 
  Example page: https://www.soldotnadentalarts.com/implants-special.html -->
  
-<!-- ![screenshot 1](lp-implants-screenshot.jpg)  
- -->
+![screenshot 1](preview.png)  
+
