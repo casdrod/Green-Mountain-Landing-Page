@@ -5,9 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta content="" name="Description" />
     <link href="lp-implant-styles.css" type="text/css" rel="stylesheet">
-    <title> </title>
-    <link rel="canonical" href="https://" />
-
+    <title>Green Mountain Dental Landing Page | Request an Appointment</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Karma:400,500|Roboto:300,400,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> 
+    <link rel="canonical" href="https://www.greenmountaindentistry.com/$var(pageURL)$.html" />
+    <link rel="apple-touch-icon" sizes="144x144" alt="Favicon 144x144" href="assets/images/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="114x114" alt="Favicon 114x114" href="assets/images/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" alt="Favicon 72x72" href="assets/images/apple-touch-icon-72.png" />
+    <link rel="apple-touch-icon" alt="Favicon 57x57" href="assets/images/apple-touch-icon-57.png" />
+    <link rel="icon" alt="Favicon" href="assets/images/favicon.png" />
+    <meta name="apple-mobile-web-app-title" content="Green Mountain Dental" />
+  
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link href="https://tntwebsites.com/tnticons/css/fontello.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
@@ -15,6 +26,35 @@
 </head>
 
 <body>
+   
+    <div id="fixed-tabs">
+         <a href="implants-special-form.html">
+            <span><i class="icon-calendar-1"></i>Request <strong>a Consultation</strong></span>
+        </a>
+        <a href="tel:1" target="_blank">
+            <span><i class="icon-phone"></i>Call <strong>Our Office</strong></span>
+        </a>
+        <a href="" target="_blank">
+            <span><i class="icon-location"></i>Map <strong>Us</strong></span>
+        </a>
+    </div>
+    
+    <header>
+        <div id="nav" class="split">
+            <a href="https://www.greenmountaindentistry.com/" class="logo"><img src="assets/images/lp-cosmetic-logo.png" alt=" Dental logo">
+            </a>
+             <address>
+                <a href="https://www.google.com/maps/place/Green+Mountain+Dental/@44.448259,-73.154801,11z/data=!4m5!3m4!1s0x0:0x7f4a07081e915406!8m2!3d44.448259!4d-73.154801?hl=en-US" target="_blank"> 118 Tilley Dr. #101 <br>South Burlington, VT 05403</a>
+             </address>
+            <a href="tel:18028633950" class="phone"><span>Call Today!</span>(802) 863-3950</a>
+            <a href="implants-special-form.html" class="btn"> Request<span>An Appointment</span></a>
+        </div>
+    </header>
+
+    <main>
+        <div id="covid">
+            New & Existing Patients Welcome! <span>• </span> New Safety Protocols for Your Family's Health
+        </div>
 
 	
 	<div id="landing-page-form">
@@ -48,7 +88,61 @@
                 </form>
           </div>
 
-
-</body>
-
-</html>
+        </main>
+        <footer>
+            <h2>Schedule Your Visit Today</h2>
+            <div class="container flex-ed">
+                
+                <article id="contact">
+                    <p><img alt="logo" src="assets/images/lp-cosmetic-logo-footer.png"></p>
+                    <a href="" target="_blank" class="address"> 
+                        118 Tilley Dr. #101 <br>
+                        South Burlington, VT 05403
+                    </a>
+                    <a href="tel:18028633950" class="phone">(802) 863-3950</a>
+                </article>
+    
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d364577.78310172196!2d-73.154801!3d44.448259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f4a07081e915406!2sGreen%20Mountain%20Dental!5e0!3m2!1sen!2sus!4v1644272529737!5m2!1sen!2sus" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <article id="footer-form">
+                    <h3>Ask A Question</h3>
+                    <form class="simple" method="post" action="https://tnt-adder.herokuapp.com/submit/d64b28af-ed0c-495f-a1f4-335e2a308394">
+                        <input type="text" name="name" required="true" placeholder="Name" />
+                        <input type="email" name="email" required="true" placeholder="Email Address" />
+                        <input type="text" name="phone" required="true" placeholder="Phone Number" />
+                        <div id="patient-type">
+                            <label for="type">Are you...</label>
+                            <span><input type="radio" name="type" value="New Patient">New Patient</span>
+                            <span><input type="radio" name="type" value="Existing Patient">Existing Patient</span>
+                        </div>
+                        <div id="hear">
+                            <label for="Discover">How Did You Hear About Us?</label>
+                            <select name="Discover">
+                                <option value="">Select One</option>
+                                <option value="Search Engine">Search Engine</option>
+                                <option value="Family">Family/Friend</option>
+                                <option value="Promotion">Promotion</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <textarea name="message" placeholder="Question"></textarea>
+                        <button class="btn">Send</button>
+                        <input type="hidden" name="_subject" value="Cosmetic Special Landing Page Footer - Questions" />
+                        <input type="hidden" name="_redirect" value="thanks.html" />
+                    </form>
+                </article>
+            </div>
+    
+            <div class="copy">
+               Copyright © 2022 Green Mountain Dental  <span>|</span>  <a href="privacy-policy.html" target="_blank">Privacy Policy</a>  <span>|</span> Site designed and maintained by
+                <a href="https://www.tntdental.com" target="_blank">TNT Dental</a> 
+            </div>
+        </footer>
+    
+        <script src="assets/js/lp-cosmetic.js"></script>
+    
+    </body>
+    </html>
