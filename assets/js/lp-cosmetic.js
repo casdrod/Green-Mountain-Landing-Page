@@ -21,13 +21,11 @@
 	}
 
     theWindow.on("scroll", function () {
-        if (theWindow.width() > 1000) {
             if (theWindow.scrollTop() >= headerBottom) {
                 body.addClass("fix-nav").css('padding-top', headerBottom);
             } else if (theWindow.scrollTop() <= headerBottom) {
                 body.removeClass("fix-nav").css('padding-top','0');
             }
-        }
     });
 
 $(function() {
@@ -36,7 +34,7 @@ $(function() {
         arrows:false, 
         autoplay:true,
         fade:true,
-        autoplaySpeed:20000,
+        autoplaySpeed:2000,
         slidesToShow: 1,
         slidesToScroll: 1,  
         adaptiveHeight: true,
@@ -48,3 +46,8 @@ $(function() {
     
     }); 
 })
+
+
+// Copyright Year Auto Update
+date = document.getElementById("copyDate");
+date.innerHTML = new Date().getFullYear();

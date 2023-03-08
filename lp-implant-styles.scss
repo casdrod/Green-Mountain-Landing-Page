@@ -53,6 +53,7 @@ $dark-bkg: #2F2F2E;
 /* -------  Fixed Tabs ------------ */
 #fixed-tabs {position: fixed;bottom: 0; right: 0; width: 100%;  text-align: center; line-height: 1; display: flex; z-index: 99;}
 #fixed-tabs a {  font-size: 13px; color: #fff; font-weight: 700; text-transform: uppercase;padding: 14px 0;  flex: 1;   }
+#fixed-tabs .ra {flex: 2;}
 #fixed-tabs a:nth-of-type(odd) { background-color: darken($primary, 8%);}
 #fixed-tabs a:nth-of-type(even) { background-color: darken($secondary, 8%); }
 @media (min-width:1031px) {
@@ -72,6 +73,7 @@ body {
     position: relative;
     background: #fff url(assets/images/lp-implant-bkgrd-texture.jpg);
     text-align: center;
+    overflow-x: hidden;
     color: $text;
     font: 400 18px/26px $font;
 }
@@ -100,7 +102,7 @@ main ul {list-style: none; padding: 0; margin: 10px auto; text-align: left; disp
     font: 700 15px/1.1 $font3;
     text-transform: uppercase;
     letter-spacing:1.5px;
-    min-width: 300px;
+    min-width: 250px;
     padding: 10px 20px;
     span {text-transform: uppercase; font-size: 13px;  vertical-align: middle; }
     &:hover { background-color:$secondary; color: #fff;  }
@@ -138,10 +140,10 @@ header { position: relative; padding: 0; z-index: 100; background-image: url(ass
     .btn {margin: 10px auto;}
      figure  {
        img{ position: relative;}
-       figcaption {color: #0F0D0D;text-transform: uppercase;font-size: 14px;margin-top: 10px;font-family: $font3;font-weight: bold;letter-spacing: 1.3px;}
+       figcaption {color: #0F0D0D;width: 100%;bottom: 0;padding: 5px;position:absolute;background-color: rgba(255,255,255,0.9);text-transform: uppercase;font-size: 14px;margin-top: 10px;font-family: $font3;font-weight: bold;letter-spacing: 1.3px;}
     }
     .no-shad img {box-shadow: none;}
-    &.even figure { order: -1;}
+    &.even figure { order: -1;position: relative;}
 }
 
 
@@ -382,10 +384,11 @@ hr {
     #banner article div { max-width: 500px; margin: 10px auto 15px;}
     #reviews .reviews-image {display:none;}
     #reviews .gallery {max-width: 100%;}
-    .split {margin: 20px auto; display: block;}
+    #reviews .gallery .review {padding-left: 45px;padding-top: 45px;}
+    .split {margin: 20px auto; display: block;padding: 30px 10px;}
     .split article {max-width: 100%;}
     .split article .btn {float: none; margin: auto; display: table; }
-    .split figure {margin: 20px auto;}
+    .split figure {margin: 20px auto;position: relative;}
     .callouts {flex-wrap: wrap; max-width: 600px;}
     .callouts .calls {max-width: 600px; flex-wrap: wrap; margin: auto;   justify-content: space-around;}
     footer .flex-ed {flex-wrap: wrap; max-width: 700px; margin: auto;}
@@ -397,29 +400,30 @@ hr {
 @media (max-width: 740px) {
     #nav .logo { margin-top: 0px; max-width: 100%; flex: 1 1 100%;}
     #nav {flex-wrap: wrap; text-align: center; padding-bottom: 10px;}   
-    #nav .btn {display: table; margin: 10px 5px;}
+    #nav .btn {display: none;}
     #banner figure {max-width: 100%;}
     .callouts .col {margin: 0 auto;}
     .callouts a h3 {margin-bottom: 15px; line-height: 1.2; }
-
+    .phone span {margin-bottom: 0;}
+    #techniques {padding-bottom: 30px;}
 }
 @media (max-width: 590px) {
     #nav .logo {margin-bottom: 20px; max-width: 90%;}
     #banner h1 {font-size: 30px;}
     h1 span { margin: 10px;}
+    #covid {font-size: 20px;}
     #banner h1 small {font-size: 28px;}
-    #banner article {min-width: 300px;}
+    #banner article {min-width: 300px;margin: auto;}
     #banner article div {line-height: 1.1;font-size: 26px; padding-top: 10px;}
     #banner figure {margin-left: 0px;}
-    #banner article > span {width: auto}
+    #banner article > span {width: auto;font-size: 14px}
     #techniques #request {padding: 10px;}
-    h2 { margin-top: 20px; font-size: 30px; }
+    h2 { margin-top: 20px; font-size: 38px; text-align:center;}
     .split article {padding: 0;}
-    .split figure {padding: 0 10px;}
+    .split figure {padding: 0;}
     .split article p {text-align: center; padding: 0 10px;}
     #techniques #request h2 {font-size: 36px;}
 	.copy {padding: 40px 10px 25px; }
-    .copy span:first-of-type {display: block; visibility: hidden; font-size: 5px;}
     #map {display: none;}
     footer #contact {padding: 20px 10px;}
     footer .flex-ed {display: block;}
@@ -434,7 +438,7 @@ hr {
     #banner h1 {font-size: 32px;}
     #banner article div {font-size: 20px; font-size: 24px;}
     #banner article div span strong {font-size: 20px;}
-    .split article .btn {font-size: 24px; margin-bottom: 20px;}
+    .split article .btn {font-size: 16px; margin-bottom: 20px;}
     #callouts h2 {font-size: 36px;}
     .callouts {padding-bottom: 10px;}
     #services h3 {margin-top: 10px;}
