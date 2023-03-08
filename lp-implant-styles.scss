@@ -139,7 +139,7 @@ header { position: relative; padding: 0; z-index: 100; background-image: url(ass
     }
     .btn {margin: 10px auto;}
      figure  {
-       img{ position: relative;}
+        position: relative;
        figcaption {color: #0F0D0D;width: 100%;bottom: 0;padding: 5px;position:absolute;background-color: rgba(255,255,255,0.9);text-transform: uppercase;font-size: 14px;margin-top: 10px;font-family: $font3;font-weight: bold;letter-spacing: 1.3px;}
     }
     .no-shad img {box-shadow: none;}
@@ -388,7 +388,7 @@ hr {
     .split {margin: 20px auto; display: block;padding: 30px 10px;}
     .split article {max-width: 100%;}
     .split article .btn {float: none; margin: auto; display: table; }
-    .split figure {margin: 20px auto;position: relative;}
+    .split figure {margin: 20px auto;}
     .callouts {flex-wrap: wrap; max-width: 600px;}
     .callouts .calls {max-width: 600px; flex-wrap: wrap; margin: auto;   justify-content: space-around;}
     footer .flex-ed {flex-wrap: wrap; max-width: 700px; margin: auto;}

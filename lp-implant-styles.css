@@ -701,7 +701,7 @@ header address a:hover {
 .split .btn {
   margin: 10px auto;
 }
-.split figure img {
+.split figure {
   position: relative;
 }
 .split figure figcaption {
@@ -1437,7 +1437,6 @@ hr {
   }
   .split figure {
     margin: 20px auto;
-    position: relative;
   }
   .callouts {
     flex-wrap: wrap;
